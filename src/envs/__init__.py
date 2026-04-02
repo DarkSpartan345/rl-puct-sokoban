@@ -1,3 +1,3 @@
-from .sokoban_env import SokobanWrapper
+from .minigrid_env import MiniGridWrapper
 
-__all__ = ["SokobanWrapper"]
+__all__ = ["MiniGridWrapper"]

@@ -14,6 +14,7 @@ Trajectory = list[TrajectoryStep]
 
 def run_episode(env: Any, agent: PUCTAgent) -> Trajectory:
     """Run one episode and return a trajectory of (state, policy, value)."""
+    agent._env = env  # share the episode env so MCTS deepcopies a reset instance
     agent.reset_tree()
     state = env.reset()
 
