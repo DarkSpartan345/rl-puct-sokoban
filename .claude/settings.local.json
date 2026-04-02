@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import numpy\")",
+      "Bash(python3 -c \"import gymnasium\")"
+    ]
+  }
+}
